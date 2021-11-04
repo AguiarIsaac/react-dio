@@ -1,3 +1,11 @@
-h1, p {
+h1,
+p {
   font-family: Lato;
+}
+.card {
+  width: 18rem;
+}
+
+body {
+  background-color: black;
 }
