@@ -1,6 +1,9 @@
 import React from 'react';
+import { useState } from 'react';
 
 const Card = () => {
+  const [valor, setValor] = useState(0);
+
   return (
     <div className="card">
       <div className="card-body">
@@ -10,7 +13,7 @@ const Card = () => {
         <button type="button" class="btn btn-danger">
           Remover
         </button>
-        <p>0</p>
+        <p>{valor}</p>
         <h5 className="card-title">Meu primeiro Card</h5>
         <p className="card-text">
           Some quick example text to build on the card title and make up the
@@ -22,7 +25,6 @@ const Card = () => {
         <li className="list-group-item">A second item</li>
         <li className="list-group-item">A third item</li>
       </ul>
-
       <div className="card-body">
         <a href="#" className="card-link">
           Card link
